@@ -42,8 +42,13 @@ for k in range(2, 11):
    silhouette_scores.append(s_score)
    callanki_scores.append(c_score)
    davies_scores.append(d_score)
-print("Inertia:", inertias)
-print("Silhouette Score:", silhouette_scores)
-print('callanki_scores:', callanki_scores)
-print('davies_scores:', davies_scores)
+best_inertia_k = k_values[inertias.index(min(inertias))]
+best_silhouette_k = k_values[silhouette_scores.index(max(silhouette_scores))]
+best_calinski_k = k_values[callanki_scores.index(max(callanki_scores))]
+best_davies_k = k_values[davies_scores.index(min(davies_scores))]
+
+print("Best k by Inertia:", best_inertia_k,min(inertias))
+print("Best k by Silhouette:", best_silhouette_k, max(silhouette_scores))
+print("Best k by Calinski-Harabasz:", best_calinski_k, max(callanki_scores))
+print("Best k by Davies-Bouldin:", best_davies_k, min(davies_scores))
 

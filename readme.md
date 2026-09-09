@@ -21,7 +21,7 @@ This project implements K - Means clustering from scratch without relying on mac
 
 ## Dataset
 
-** wholesale customers dataset ** 
+**wholesale customers dataset** 
 
 Source:
 

@@ -21,7 +21,7 @@ This project implements K - Means clustering from scratch without relying on mac
 
 ## Dataset
 
-wholesale customers dataset
+** wholesale customers dataset ** 
 
 Source:
 
@@ -64,20 +64,21 @@ d = √((x₁ - x₂)² + (x₁ - x₂)² + ... + (xₙ - xₙ)²)
 
 ### From Scratch
 
+```text id="t6p8ra"
 k: 6 inertia: 970.5087619639767
 best inertia between 6 to 10
 
 Silhouette Score: 0.5878146460367379
-
+```
 ### scikit learn
-
+```text id="t6p8ra"
 k: 6 inertia: 971.2028218633683
 best inertia between 6 to 10
 
 Best k by Silhouette: 2 0.5532526964184259
 Best k by Calinski-Harabasz: 5 159.45185379722992
 Best k by Davies-Bouldin: 10 0.9324223409287795
-
+```
 The from-scratch implementation was compared with scikit-learn's `KMeans` using the same dataset and train-test split.
 
 ## Visualizations
